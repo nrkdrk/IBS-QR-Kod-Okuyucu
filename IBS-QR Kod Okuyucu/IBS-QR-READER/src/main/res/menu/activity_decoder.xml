@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <item
+      android:id="@+id/QrValueTransfer"
+      android:orderInCategory="100"
+      android:showAsAction="never"
+      android:title="QR Değerini PC'ye Gönder" />
+  <item
+      android:id="@+id/QrValueSave"
+      android:orderInCategory="100"
+      android:showAsAction="never"
+      android:title="QR Değerini Kaydet" />
+  <item
+      android:id="@+id/Settings"
+      android:orderInCategory="100"
+      android:showAsAction="never"
+      android:title="Ayarlar" />
+
+</menu>

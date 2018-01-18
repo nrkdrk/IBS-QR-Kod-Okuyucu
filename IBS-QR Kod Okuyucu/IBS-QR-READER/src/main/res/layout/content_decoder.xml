@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DecoderActivity"
+    >
+
+  <com.dlazaro66.qrcodereaderview.QRCodeReaderView
+      android:id="@+id/qrdecoderview"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentTop="true"
+      />
+
+  <com.nrkdrk.IbsQrReader.PointsOverlayView
+      android:id="@+id/points_overlay_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      />
+
+  <ScrollView
+      android:id="@+id/scroll"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/result_text_view"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:background="#55000000"
+          android:gravity="center"
+          android:padding="16dp"
+          android:textColor="#ffffff"
+          android:textSize="14sp" />
+    </LinearLayout>
+  </ScrollView>
+
+  <CheckBox
+      android:id="@+id/flashlight_checkbox"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:background="#99000000"
+      android:checked="false"
+      android:padding="16dp"
+      android:text="Aç/Kapa | Flaş"
+      android:textColor="#ffffff"
+      android:textSize="14sp" />
+
+  <CheckBox
+      android:id="@+id/enable_decoding_checkbox"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/flashlight_checkbox"
+      android:background="#99000000"
+      android:checked="true"
+      android:padding="16dp"
+      android:text="Aç/Kapa | QR şifre çözme"
+      android:textColor="#ffffff"
+      android:textSize="14sp" />
+
+</RelativeLayout>
