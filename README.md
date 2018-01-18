@@ -5,9 +5,9 @@
   
 | Teknik   | Detay(Detail) |
 | ------ | ------ |
-| Soket Programlama | Soket programlama ile pc ye veri aktarımı |
-| SharedPreferencesSettings | ile internet bağlantısı |
-| DecoderActivity | QR Değerlerini okuma ve deşifre etme |
+| Soket Programlama | pc ye veri aktarımı için kullanıldı |
+| SharedPreferencesSettings | internet bağlantısı için kullanıldı |
+| DecoderActivity | QR Değerlerini okuma ve deşifre etme için kullanıldı |
 
 Ana Sayfa
 
